@@ -8,6 +8,7 @@ namespace MasterMindProject
 {
 
     //GameSolution class handles everything that deals with the solution
+    //Hi
 
     class GameSolutionClass
     {
