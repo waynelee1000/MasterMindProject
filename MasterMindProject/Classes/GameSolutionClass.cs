@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MasterMindProject
 {
+
+    //GameSolution class handles everything that deals with the solution
+
     class GameSolutionClass
     {
        public  HintClass solutionReporting = new HintClass();
