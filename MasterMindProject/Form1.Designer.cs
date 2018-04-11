@@ -418,6 +418,7 @@
             this.Controls.Add(this.pnlGuessArea);
             this.Name = "FrmMasterMind";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnlSolution.ResumeLayout(false);
             this.pnlSolution.PerformLayout();

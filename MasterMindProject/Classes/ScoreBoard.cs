@@ -25,6 +25,7 @@ namespace MasterMindProject
         public ScoreBoard() {
             
         }
+        
         public void resetPlayerList() {
             for (int i = 0; i < PlayerList.Count; i++)
             {
@@ -43,12 +44,13 @@ namespace MasterMindProject
             Otherplayer = playerString[0];
             OtherDifficulty = playerString[1];
             OtherTime = Convert.ToDouble(playerString[2]);
+
         }
 
-        public bool HigherScore(string nextRecord)
+        public bool HigherScore()
         {
             
-            createStringObject(nextRecord);
+            //createStringObject(nextRecord);
             string Difficulty= playerClass.getDifficulty();
             double time = playerClass.getTime();
 
@@ -80,37 +82,26 @@ namespace MasterMindProject
                 PlayerList.Add(nextRecord);
                 nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
             }
-            
+
+
+            currentScoreBoardFile.closeFile();
         }
 
         public void findAndSaveScore()
         {
-            currentScoreBoardFile.rewindFile();
-            Boolean isEndOfFile = true;
-            string nextRecord;
-            nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
-
             string Difficulty = playerClass.getDifficulty();
             double time = playerClass.getTime();
             string player = playerClass.getName();
              
-            string playerString = player +" * "+ Difficulty +" * "+ time.ToString();
+            string playerString = player +" * "+ Difficulty +"  * "+ time.ToString() ;
 
-            int count=0;
-            while (!isEndOfFile)
-            {
-                count++;
-                if (HigherScore(nextRecord))
+            for (int i = 0; i < PlayerList.Count; i++) {
 
-                {
-                    PlayerList[count-1] = playerString;
-                    isEndOfFile = true;
+                createStringObject(PlayerList[i]);
+                if (HigherScore()) {
+                    PlayerList[i] = playerString;
                 }
-                else
-                {
-                  nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
-                } // end If
-                //} //end While
+                
             }
             
         }
@@ -122,24 +113,10 @@ namespace MasterMindProject
             {
                 updatedScoreBoardFile.putNextRecord(PlayerList[i]);
             }
-            
+
+            updatedScoreBoardFile.closeFile();
         }
-        /*
-        public void copyRemainingRecords()
-        {
-            Boolean isEndOfFile = false;
-            string nextRecord;
-
-            nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
-            while (!isEndOfFile)
-            {
-                updatedScoreBoardFile.putNextRecord(nextRecord);
-                nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
-            }
-            
-            // end While
-        }*/
-
+       
         //– closes all external files
         public void closeFiles()
         {
@@ -151,13 +128,13 @@ namespace MasterMindProject
         public void displayScoreBoard()
         {
            
-            string Scoreboard = "";
+            string Scoreboard = "Name:   Difficulty:   Sec:\n";
+
             for (int i = 0; i < PlayerList.Count; i++)
             {
                 Scoreboard += PlayerList[i] + "\n";
             }
             MessageBox.Show(Scoreboard);
-            
 
         }
 

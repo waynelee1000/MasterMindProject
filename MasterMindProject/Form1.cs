@@ -342,10 +342,17 @@ namespace MasterMindProject
         private void btnExit_Click(object sender, EventArgs e)
         {
             
+           /* scoreBoardClass.writeOneRecord();
+            scoreBoardClass.copyFiles();
             scoreBoardClass.resetPlayerList();
-            scoreBoardClass.writeOneRecord();
-            scoreBoardClass.closeFiles();
+           // scoreBoardClass.closeFiles();*/
             this.Close();
+        }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            scoreBoardClass.writeOneRecord();
+            scoreBoardClass.copyFiles();
+            scoreBoardClass.resetPlayerList();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
