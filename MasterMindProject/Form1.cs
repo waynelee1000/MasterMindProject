@@ -190,6 +190,7 @@ namespace MasterMindProject
                 btnStart.Enabled = false;
             }
             btnOK.Enabled = false;
+            scoreBoardClass.Intilized();
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -227,18 +228,10 @@ namespace MasterMindProject
                 ScoreBoard.playerClass.setDifficulty(DiffcultyScore);
                 ScoreBoard.playerClass.setName(txtName.Text);
 
-                bool find;
-                scoreBoardClass.findAndSaveScore(out find);
-
-                if (find)
-                {
-                    scoreBoardClass.writeOneRecord();
-                    scoreBoardClass.copyRemainingRecords();
-                    scoreBoardClass.closeFiles();
-                    scoreBoardClass.copyFiles();
-
-                }
-                //scoreBoardClass.updateTocurrent();
+                //bool find;
+                scoreBoardClass.findAndSaveScore();
+                //scoreBoardClass.closeFiles();
+                
             }
             //check for lose
             if (numguess == Diffculty)
@@ -348,6 +341,10 @@ namespace MasterMindProject
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            
+            scoreBoardClass.resetPlayerList();
+            scoreBoardClass.writeOneRecord();
+            scoreBoardClass.closeFiles();
             this.Close();
         }
 
@@ -370,9 +367,8 @@ namespace MasterMindProject
 
         private void btnScoreBoard_Click(object sender, EventArgs e)
         {
-
+            
             scoreBoardClass.displayScoreBoard();
-            scoreBoardClass.closeFiles();
         }
     }
 }

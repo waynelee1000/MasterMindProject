@@ -1,3 +1,3 @@
-mknkj * Easy * 13.0759363
-hope * Medium * 12.2610344
-Rose * Hard * 24.0439502
+A * Easy * 20
+B * Medium * 30
+C * Hard * 30

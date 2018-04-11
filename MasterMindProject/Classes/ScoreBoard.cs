@@ -14,17 +14,22 @@ namespace MasterMindProject
         private string Otherplayer;
         private string OtherDifficulty;
         private double OtherTime;
-        string[] PlayerList = new string[3];
+        List<string> PlayerList = new List<string>();
 
         public static PlayerClass playerClass = new PlayerClass();
         private static string currentScoreBoardPath = "currentScoreBoardFile.txt";
         private static string updatedScoreBoardPath = "updatedScoreBoardFile.txt";
         public static currentFileClass currentScoreBoardFile = new currentFileClass(currentScoreBoardPath);
         public static updatedFileClass updatedScoreBoardFile = new updatedFileClass(updatedScoreBoardPath);
-
+        
         public ScoreBoard() {
-
-
+            
+        }
+        public void resetPlayerList() {
+            for (int i = 0; i < PlayerList.Count; i++)
+            {
+                PlayerList[i] = null;
+            }
         }
         public void createStringObject(string nextRecord)  // IN: string from the Book Text File
         {
@@ -42,6 +47,7 @@ namespace MasterMindProject
 
         public bool HigherScore(string nextRecord)
         {
+            
             createStringObject(nextRecord);
             string Difficulty= playerClass.getDifficulty();
             double time = playerClass.getTime();
@@ -51,67 +57,74 @@ namespace MasterMindProject
                 if (time < OtherTime)
                 {
                     return true;
-
                 }
                 else
                 {
                     return false;
                 }
             }
-            else {
+            else
+            {
                 return false;
             }
-            
+                
         }
-        public string findAndSaveScore(out Boolean find)
+        public void Intilized()
         {
             Boolean isEndOfFile = true;
             string nextRecord;
-            find = false;
-
             nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
+
             while (!isEndOfFile)
             {
+                PlayerList.Add(nextRecord);
+                nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
+            }
+            
+        }
+
+        public void findAndSaveScore()
+        {
+            currentScoreBoardFile.rewindFile();
+            Boolean isEndOfFile = true;
+            string nextRecord;
+            nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
+
+            string Difficulty = playerClass.getDifficulty();
+            double time = playerClass.getTime();
+            string player = playerClass.getName();
+             
+            string playerString = player +" * "+ Difficulty +" * "+ time.ToString();
+
+            int count=0;
+            while (!isEndOfFile)
+            {
+                count++;
                 if (HigherScore(nextRecord))
+
                 {
-                    find = true;
-                    // CopyRemainingRecords();
-                    return (nextRecord);
+                    PlayerList[count-1] = playerString;
+                    isEndOfFile = true;
                 }
                 else
                 {
-                    updatedScoreBoardFile.putNextRecord(nextRecord);
-                    nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
+                  nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
                 } // end If
-            } //end While
-
-            return (nextRecord);
-            // end While
+                //} //end While
+            }
+            
         }
 
         public void writeOneRecord()
         {
-            string Difficulty = playerClass.getDifficulty();
-            double time = playerClass.getTime();
-            string player = playerClass.getName();
-
-            string newRecordString = "";
-
-            string[] newRecord = new string[3];
-            newRecord[0] = player;
-            newRecord[1] = Difficulty;
-            newRecord[2] = time.ToString();
-
-
-            for (int i = 0; i < newRecord.Length - 1; i++)
+           
+            for (int i = 0; i < PlayerList.Count; i++)
             {
-                newRecordString += newRecord[i] + " * ";
+                updatedScoreBoardFile.putNextRecord(PlayerList[i]);
             }
-            newRecordString += newRecord[2];
-
-            updatedScoreBoardFile.putNextRecord(newRecordString);
+            
         }
-
+        /*
         public void copyRemainingRecords()
         {
             Boolean isEndOfFile = false;
@@ -122,8 +135,10 @@ namespace MasterMindProject
             {
                 updatedScoreBoardFile.putNextRecord(nextRecord);
                 nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
-            } // end While
-        }
+            }
+            
+            // end While
+        }*/
 
         //– closes all external files
         public void closeFiles()
@@ -135,30 +150,14 @@ namespace MasterMindProject
 
         public void displayScoreBoard()
         {
-            string nextRecord;
-            Boolean isEndOfFile = true;
-
-            File.Open(currentScoreBoardPath, FileMode.Open);
-            nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
            
-                while (!isEndOfFile)
-
-                {
-                for (int i = 0; i < PlayerList.Length; i++)
-                {
-                    PlayerList[i] += nextRecord;
-                    File.Open("currentScoreBoardFile.txt", FileMode.Open);
-                    nextRecord = currentScoreBoardFile.getNextRecord(ref isEndOfFile);
-                }
-                }
-             //end While                           
-
             string Scoreboard = "";
-            for (int i = 0; i < PlayerList.Length; i++)
+            for (int i = 0; i < PlayerList.Count; i++)
             {
-                Scoreboard += PlayerList[i]+"\n";
+                Scoreboard += PlayerList[i] + "\n";
             }
             MessageBox.Show(Scoreboard);
+            
 
         }
 

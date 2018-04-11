@@ -18,3 +18,13 @@ C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindP
 C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.CoreCompileInputs.cache
 C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.exe
 C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.pdb
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe.config
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.pdb
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csprojResolveAssemblyReference.cache
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.FrmMasterMind.resources
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.Properties.Resources.resources
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.GenerateResource.Cache
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.CoreCompileInputs.cache
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.exe
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.pdb
