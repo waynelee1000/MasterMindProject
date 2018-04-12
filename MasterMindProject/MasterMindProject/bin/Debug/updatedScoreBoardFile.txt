@@ -1,0 +1,3 @@
+Dave     *        Easy          *       50.2862456
+gvh      *        Medium        *       50.3764933
+Pikachu  *        Hard          *       50.5202554

@@ -1,0 +1,40 @@
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe.config
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.pdb
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csprojResolveAssemblyReference.cache
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.Properties.Resources.resources
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.GenerateResource.Cache
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.CoreCompileInputs.cache
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.exe
+c:\users\y hy\source\repos\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.pdb
+C:\Users\Y Hy\source\repos\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.FrmMasterMind.resources
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe.config
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.pdb
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csprojResolveAssemblyReference.cache
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.FrmMasterMind.resources
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.Properties.Resources.resources
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.GenerateResource.Cache
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.CoreCompileInputs.cache
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.exe
+C:\Users\wayne\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.pdb
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe.config
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.pdb
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csprojResolveAssemblyReference.cache
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.FrmMasterMind.resources
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.Properties.Resources.resources
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.GenerateResource.Cache
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.CoreCompileInputs.cache
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.exe
+C:\Users\Y Hy\Documents\GitHub\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.pdb
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe.config
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.exe
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\bin\Debug\MasterMindProject.pdb
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csprojResolveAssemblyReference.cache
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.FrmMasterMind.resources
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.Properties.Resources.resources
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.GenerateResource.Cache
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.csproj.CoreCompileInputs.cache
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.exe
+C:\Users\Y Hy\Desktop\MasterMindProject\MasterMindProject\obj\Debug\MasterMindProject.pdb
